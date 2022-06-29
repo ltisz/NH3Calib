@@ -27,8 +27,8 @@ from statistics import mean
 
 os.chdir(os.path.dirname(sys.argv[0]))  #Change working folder to folder that script is in
 
-starttime = "06-02-2022_0900"           #Data start time
-endtime = "06-02-2022_2200"             #Data end time
+starttime = "05-27-2022_0900"           #Data start time
+endtime = "06-09-1700_2200"             #Data end time
 
 nh3Factor = 13.11
 c1Factor = 8.58
@@ -303,5 +303,5 @@ def calibCalc(filenameOut):
             f.write("{}, {}\n".format(ms[0],",".join(str(x) for x in ms[1:5])[1:-1]))
     
     
-#createMaster(starttime, endtime)
+createMaster(starttime, endtime)
 calibCalc(filenameOut)
